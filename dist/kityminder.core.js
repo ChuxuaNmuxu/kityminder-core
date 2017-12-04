@@ -6,6 +6,8 @@
  * Copyright (c) 2017 Baidu FEX; Licensed MIT
  * ====================================================
  */
+import kity from '../bower_components/kity/dist/kity';
+window.kity = kity;
 
 (function( root, factory ) {
 	if( typeof define === 'function' && define.amd ) {
