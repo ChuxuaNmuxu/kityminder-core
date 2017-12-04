@@ -7,7 +7,21 @@
  * ====================================================
  */
 
-(function () {
+(function( root, factory ) {
+	if( typeof define === 'function' && define.amd ) {
+		// AMD. Register as an anonymous module.
+		define( function() {
+			root.kityminder = factory();
+			return root.kityminder;
+		} );
+	} else if( typeof exports === 'object' ) {
+		// Node. Does not work with strict CommonJS.
+		module.exports = factory();
+	} else {
+		// Browser globals.
+		root.kityminder = factory();
+	}
+}(this, function () {
 var _p = {
     r: function(index) {
         if (_p[index].inited) {
@@ -9252,4 +9266,4 @@ function use(name) {
     _p.r([ moduleMapping[name] ]);
 }
 use('expose-kityminder');
-})();
+}))

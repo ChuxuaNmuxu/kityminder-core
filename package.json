@@ -4,6 +4,7 @@
   "description": "KityMinder Core Implement",
   "version": "1.4.45",
   "homepage": "https://github.com/fex-team/kityminder-core",
+  "main": "dist/kityminder.core.js",
   "author": {
     "name": "Baidu FEX",
     "url": "http://fex.baidu.com"
