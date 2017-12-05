@@ -7,5 +7,6 @@
  * @copyright: Baidu FEX, 2014
  */
 define(function(require, exports, module) {
-    module.exports = window.kity;
+    var kity = require('../../bower_components/kity/src/kity');
+    module.exports = kity;
 });

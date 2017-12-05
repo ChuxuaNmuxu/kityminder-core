@@ -6,21 +6,7 @@
  * Copyright (c) 2015 Baidu FEX; Licensed BSD
  * ====================================================
  */
-(function( root, factory ) {
-	if( typeof define === 'function' && define.amd ) {
-		// AMD. Register as an anonymous module.
-		define( function() {
-			root.kityminder = factory();
-			return root.kityminder;
-		} );
-	} else if( typeof exports === 'object' ) {
-		// Node. Does not work with strict CommonJS.
-		module.exports = factory();
-	} else {
-		// Browser globals.
-		root.kityminder = factory();
-	}
-}(this, function () {
+(function () {
     var _p = {
         r: function(index) {
             if (_p[index].inited) {
@@ -8582,4 +8568,5 @@
      * 模块暴露
      */
     use('kity');
-    }))
+    }
+)

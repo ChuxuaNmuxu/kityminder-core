@@ -47,7 +47,7 @@ module.exports = function(grunt) {
             },
             merge: {
                 files: [{
-                    src: 'src/**/*.js',
+                    src: ['src/**/*.js', 'bower_components/kity/src/**/*.js'],
                     dest: 'dist/kityminder.core.js'
                 }]
             }
